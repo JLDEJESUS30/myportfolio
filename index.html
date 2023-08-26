@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="lightbox.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+<!----------------------------------This lower section is the starting point of the website ↓ ---------------------------------------------------------->
+    <div id="header"> 
+        <div class ="container">
+            <nav>
+                <img src="Images/Newest logo.png" class="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>  
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p class="start">Let's Start /></p>
+                <h1>Hi I'm <Span>John Luis A. De Jesus</Span><br>A future Computer Engineer</h1>
+                <p class="end">This is my official portfolio to showcase my skills, work experience, and myself.</p>
+            </div>
+        </div>
+    </div>
+    <!-------------This lower section is about me ↓ --------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                 <div class="about-col-1">
+                    <img src="Images/AboutMe.png">
+                 </div>
+                 <div class="about-col-2">
+                    <h1 class="sub-title">Guess if you're wondering about me</h1>
+                    <p><b>About me:</b> My name is John Luis A. De Jesus, and I'm thrilled to introduce myself to you. 
+                        I am an incoming 3rd year College Student this August, taking a Bachelor of Science in Computer Engineering.</p>
+               
+                    <div class ="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Work experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>     
+                <div class="tab-contents active-tab" id="skills">
+                    <ul> 
+                        <li><span>Virtual Assistant:</span><br>Any virtual assistance</li>
+                        <li><span>Utilizing:</span><br>Adobe Photoshop/Canva/Google Sheets/MS Excels, Powerpoint, Word/Product marketing and Research</li>
+                        <li><span>Programming:</span><br>Java/Python/HTML, CSS, and JavaScript</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul> 
+                        <li><span>February 2021-July 2023:</span><br>Product Lister and Instructor at Takealot.com</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul> 
+                        <li><span>Daycare 2007-2008:</span><br>San Isidro Elementary School</li>
+                        <li><span>Kindergarten 2008-2009:</span><br>San Isidro Elementary School</li>
+                        <li><span>Elementary Grade 1-2 2009-2011:</span><br>San Isidro Elementary School</li>
+                        <li><span>Elementary Grade 3 2011-2012:</span><br>ACTS Learning Center</li>
+                        <li><span>Elementary Grade 4-6 2012-2015:</span><br>Lady of Rose Academy Inc</li>
+                        <li><span>Junior Highschool 2015-2019:</span><br>Lady of Rose Academy Inc</li>
+                        <li><span>Senior Highschool 2019-2021:</span><br>Information Communication and Technology (ICT Strand) at STI College Calamba</li>
+                        <li><span>College 2021-2023:</span><br>Bachelor of Science in Computer Engineering (BSCPE Course) at STI College Calamba </li>
+                        <li><span>College 2023-2025:</span><br>Bachelor of Science in Computer Engineering (BSCPE Course) at STI College Santa Rosa </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------This lower section is about my services ↓ --------------->
+    <!--------------Testing for git hub------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-headset"></i>
+                    <h2>Virtual Assitance</h2>
+                    <p>I am ready to work for you on any virtual assistance you need. With 2 years and 6 months of experience in product listing and being an instructor. I utilize Adobe Photoshop, Google Sheets, MS Excel, Word, PowerPoint, Product marketing, and research.</p>
+                    <a href="#">Know More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Programming</h2>
+                    <p>I am proficient in programming languages like Java, Python, and HTML/CSS. Especially Java, which I have been using for 4 years now. 
+                    I also have background knowledge of JavaScript, SQL, and Android Studio. I also developed an application, which was our project in grade 12.</p>
+                    <a href="#">Know More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-image"></i>
+                    <h2>Editting or Designing</h2>
+                    <p>Transform your visuals into captivating masterpieces with my proficient picture editing and designing services, where I utilize Adobe Photoshop, Canva, and many other editing software.</p>
+                    <a href="#">Know More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-tie"></i>
+                    <h2>Internship</h2>
+                    <p>I am excited to express my interest in securing an internship opportunity with your esteemed organization, as I am eager to contribute my skills, learn from your experienced team, and actively participate in meaningful projects that align with my career aspirations.</p>
+                    <a href="#">Know More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <h2>Online English teaching</h2>
+                    <p>Unlock your language potential with my online English teaching sessions tailored to your unique learning needs. Start your language journey today and gain confidence in speaking, reading, and writing English fluently! </p>
+                    <a href="#">Know More</a>
+                </div>
+                <div>
+                <i class="fa-brands fa-creative-commons-by"></i>
+                <h2>Attributes</h2>
+                <p>These are the attributes that I possess. Showcasing my typing speed, IQ test, test assesment, and etc.</p>
+                <a href="#">Know More</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------This lower section is about My Work exp ↓  --------------------------------------->
+    
+    <div id="Portfolio"> 
+        <div class="container"> 
+            <h1 class="sub-title1">My work experience</h1>
+            <div class="content">
+                <div class="work-list">
+                    <div class="work">
+                        <a href="Images/Work 1.png" data-lightbox="models" data-title="Caption1">
+                            <img src="Images/Work 1.png">
+                        </a>
+                    </div>
+                    <div class="work">
+                        <a href="Images/Work 2.jpg" data-lightbox="models" data-title="Caption2">
+                            <img src="Images/Work 2.jpg">
+                        </a>
+                    </div>
+                    <div class="work">
+                        <a href="Images/Work 3.png" data-lightbox="models" data-title="Caption3">
+                            <img src="Images/Work 3.png">
+                        </a>
+                    </div>
+                    <div class="work">
+                        <a href="Images/Work 4.png" data-lightbox="models" data-title="Caption4">
+                            <img src="Images/Work 4.png">
+                        </a>
+                    </div>
+                    <div class="work">
+                        <a href="Images/Work 5.png" data-lightbox="models" data-title="Caption5">
+                            <img src="Images/Work 5.png">
+                        </a>
+                    </div>
+                    <div class="work">
+                        <a href="Images/Work 6.png" data-lightbox="models" data-title="Caption6">
+                            <img src="Images/Work 6.png">
+                        </a>
+                    </div> 
+                </div>
+            </div>
+                    </div>
+
+<!---------------------------Work exp description---------------------------------------------------------->
+                    <div class="side-bar">
+                        <h2 class="Product-list"><b>Product lister and Instructor at Takealot.com</b></h2>
+                        <p class="Product-list-date">February 2021-July 2023</p>
+                        <p class="Product-list-des">For the last two years and a half, I've been working as a product lister for the biggest e-commerce site in South Africa. To be an effective product lister, good communication skills, I learned to pay attention to details, and maximize time, especially since I'm currently a college student. I’ve also been asked by my employer to train five of my colleagues to be effective product listers.</p>
+                        <p class="responsibilities">As a <span><b>product lister</b></span>, below are some of my primary responsibilities:</p>
+                        <ul class="bullet-list">
+                            <li>I make our products the best among competitors.</li>
+                            <li>I also trained five of my colleagues to be effective product listers.</li>
+                            <li>Utilizing Adobe Photoshop for the pictures that need to be uploaded and listed.</li>
+                            <li>I handle multiple stores, making our products appear first when searching for them.</li>
+                            <li>I also organized some products in spreadsheets, placed competitors, and identified product prices that needed to be changed.</li>
+                          </ul>
+                    </div>
+                </div>
+    </div>
+    <!-----------This is for the footer-------------------->
+    <script src="lightbox-plus-jquery.min.js"></script>
+<!-------------------------------This lower section is about my contacts ↓ -------------------------------------------------------->
+        <footer class="footer">
+        <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Get in touch</h1>
+                    <p><i class="fa-regular fa-message"></i><b>Skype:</b> John Luis De Jesus</p>
+                    <p><i class="fa-solid fa-mobile-screen-button"></i><b>Contact No:</b> +63921-716-9235</p>
+                    <p><i class="fa-regular fa-paper-plane"></i><b>Email:</b> johnluisdejesus5@gmail.com</p>
+                    <p><i class="fa-solid fa-link"></i><b>LinkedIn Link:</b> linkedin.com/in/john-luis-de-jesus-b622b3205</p>
+                    <div class="social-icons">
+                    <a href="skype:John Luis De Jesus" target="_blank"><i class="fa-brands fa-skype"></i></a>
+
+                    <a href="https://www.linkedin.com/in/john-luis-de-jesus-b622b3205?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSUEHGVMkSVajklsF44xIYw%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Images/John Luis A. De Jesus Resume.pdf" target="_blank" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright by John Luis A. De Jesus ©2023</p>
+                </div>
+                </div>
+                </div>
+            </footer>
+                <!-- JavaScript -->
+                <script>
+                    var tablinks = document.getElementsByClassName("tab-links");
+                    var tabcontents = document.getElementsByClassName("tab-contents");
+                
+                    function opentab(tabname) {
+                        for (tablink of tablinks) {
+                            tablink.classList.remove("active-link");
+                        }
+                        for (tabcontent of tabcontents) {
+                            tabcontent.classList.remove("active-tab");
+                        }
+                        event.currentTarget.classList.add("active-link");
+                        document.getElementById(tabname).classList.add("active-tab");
+                    }
+                
+                    var sidemenu = document.getElementById("sidemenu");
+                    function openmenu() {
+                        sidemenu.style.right = "0";
+                    }
+                
+                    function closemenu() {
+                        sidemenu.style.right = "-200px";
+                    }
+                
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbxNHwC1mZ6Bd1iO8oi8IRy7-FFFh9NEY9QFZniKzY22sP5ylzBiXbK2DjEkJlO-PjEQPA/exec';
+                    const form = document.forms['submit-to-google-sheet'];
+                    const msg = document.getElementById('msg');
+                
+                    form.addEventListener('submit', e => {
+                        e.preventDefault();
+                        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                            .then(response => {
+                                msg.innerHTML = "Message sent successfully";
+                                setTimeout(function () {
+                                    msg.innerHTML = "";
+                                }, 5000);
+                                form.reset(); // Corrected "fomr" to "form"
+                            })
+                            .catch(error => console.error('Error!', error.message));
+                    });
+                </script>
+      </script>
+    </body>
+</html>
